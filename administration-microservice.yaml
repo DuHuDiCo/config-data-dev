@@ -12,7 +12,11 @@ spring:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true   
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
 eureka:
   client:
     fetch-registry: true
