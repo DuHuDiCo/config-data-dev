@@ -21,7 +21,11 @@ eureka:
   instance:
     hostname: localhost
     lease-renewal-interval-in-seconds: 30
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
 
 jwt:
   secret: electrohogarl
