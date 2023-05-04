@@ -4,7 +4,7 @@ eureka:
   client:
     fetch-registry: true
     register-with-eureka: true  
-    eureka-server-u-r-l-context: http://localhost:8761/eureka/
+    eureka-server-u-r-l-context: http://192.168.1.171:8761/eureka/
   instance:
     hostname: localhost
     lease-renewal-interval-in-seconds: 30
