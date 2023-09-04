@@ -26,3 +26,6 @@ eureka:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}} 
     lease-renewal-interval-in-seconds: 30
+user:
+  microservice:
+    url: http://192.168.1.192:8002/api/v1/users

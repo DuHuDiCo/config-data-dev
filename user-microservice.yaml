@@ -30,3 +30,6 @@ management:
 
 jwt:
   secret: electrohogarl
+administration:
+  microservice:
+    url: http://192.168.1.192:8003/api/v1/roles
