@@ -22,4 +22,4 @@ user:
 
 administration:
   microservice:
-    url: http://192.168.1.183:8003/api/v1/roles
+    url: http://192.168.1.241:8003/api/v1/roles
