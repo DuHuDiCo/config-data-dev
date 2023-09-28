@@ -16,6 +16,11 @@ management:
 jwt:
   secret: electrohogar
 
+spring:
+  devtools:
+    restart:
+      enabled: true
+
 user:
   microservice:
     url: http://192.168.1.183:8002/api/v1/users
@@ -23,3 +28,4 @@ user:
 administration:
   microservice:
     url: http://192.168.1.241:8003/api/v1/roles
+
