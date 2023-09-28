@@ -12,15 +12,19 @@ spring:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true   
-
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+  messages:
+    encoding: UTF-8  
 eureka:
   client:
     fetch-registry: true
     register-with-eureka: true  
     service-url.defaultZone: http://192.168.1.171:8761/eureka/
   instance:
-    prefer-ip-address: true
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    hostname: 192.168.1.241
     lease-renewal-interval-in-seconds: 30
 management:
   endpoints:
