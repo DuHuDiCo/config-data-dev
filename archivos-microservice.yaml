@@ -47,3 +47,6 @@ user:
 cartera:
   microservice:
     url: http://192.168.1.241:8006/api/v1/cartera
+url:
+  ruta:
+    archivos: J:\\Descargas    
