@@ -49,3 +49,4 @@ clientes:
 url:
   ruta:
     reportes: /uploads
+    comprobantes: /uploads
