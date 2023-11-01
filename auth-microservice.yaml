@@ -4,9 +4,9 @@ eureka:
   client:
     fetch-registry: true
     register-with-eureka: true  
-    service-url.defaultZone: http://192.168.1.241:8761/eureka/
+    service-url.defaultZone: http://192.168.1.171:8761/eureka/
   instance:
-    hostname: 192.168.1.241
+    hostname: 192.168.1.171
     lease-renewal-interval-in-seconds: 30
 management:
   endpoints:
@@ -23,9 +23,9 @@ spring:
 
 user:
   microservice:
-    url: http://192.168.1.241:8002/api/v1/users
+    url: http://192.168.1.171:8002/api/v1/users
 
 administration:
   microservice:
-    url: http://192.168.1.241:8003/api/v1/roles
+    url: http://192.168.1.171:8003/api/v1/roles
 
