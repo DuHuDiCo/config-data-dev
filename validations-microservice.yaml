@@ -5,6 +5,10 @@ spring:
     url: jdbc:mysql://192.168.1.171:3306/validations-microservice
     username: programs
     password: 3SbaYcPuWQ9VOO82
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
   jpa:
     properties:
       hibernate:
