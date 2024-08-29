@@ -3,8 +3,8 @@ server:
 spring:
   datasource:
     url: jdbc:mysql://192.168.1.171:3306/archivos_microservice
-    username: root
-    password: root
+    username: admin
+    password: admin
   jpa:
     properties:
       hibernate:
@@ -49,4 +49,4 @@ cartera:
     url: http://192.168.1.171:8006/api/v1/cartera
 url:
   ruta:
-    archivos: /data/uploads/archivos_microservice
+    archivos: /data/uploads/archivos-microservice
