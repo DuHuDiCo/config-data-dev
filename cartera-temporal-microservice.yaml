@@ -1,7 +1,7 @@
 server:
   port: 8021
-tomcat: 
-  relaxed-query-chars: ['{','}']  
+tomcat:
+  relaxed-query-chars: ["{", "}"]
 spring:
   jackson:
     time-zone: America/Bogota
@@ -10,25 +10,25 @@ spring:
     username: programs
     password: 3SbaYcPuWQ9VOO82
     hikari:
-      max-lifetime: 60000  
+      max-lifetime: 60000
   jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
     hibernate.ddl-auto: update
-    generate-ddl: true
+    generate-ddl: false
     show-sql: false
   http:
     encoding:
       charset: UTF-8
       force: true
   messages:
-    encoding: UTF-8  
+    encoding: UTF-8
   servlet:
     multipart:
       max-file-size: 1000MB
-      max-request-size: 1000MB  
-  
+      max-request-size: 1000MB
+
 management:
   endpoints:
     web:
@@ -37,7 +37,7 @@ management:
 eureka:
   client:
     fetch-registry: true
-    register-with-eureka: true  
+    register-with-eureka: true
     service-url.defaultZone: http://192.168.1.171:8761/eureka/
   instance:
     hostname: 192.168.1.171
@@ -49,7 +49,7 @@ clientes:
   temporal: http://192.168.1.171:8020/api/v1/clientes
 auth:
   microservice:
-    url: http://192.168.1.171:8001/api/v1  
+    url: http://192.168.1.171:8001/api/v1
 ruta:
   firmas: /uploads/Firmas
   recibos: /uploads/Recibos
